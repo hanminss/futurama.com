@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation } from ".";
+import { Navigation, Footer } from ".";
 import styled from "@emotion/styled";
 
 export const Layout: React.FC = ({ children }) => {
@@ -7,6 +7,7 @@ export const Layout: React.FC = ({ children }) => {
     <div>
       <Navigation />
       <ChildrenWrap>{children}</ChildrenWrap>
+      <Footer />
     </div>
   );
 };

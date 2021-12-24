@@ -30,7 +30,8 @@ from, 20%, 53%, 80%, to {
 `;
 
 const LoadingContainer = styled.div`
-  width: 100vw;
+  width: 100%;
+  hegith: auto;
   text-align: center;
   margin-top: 20vh;
   animation: ${loadFade} 0.5s ease infinite;

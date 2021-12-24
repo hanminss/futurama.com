@@ -17,7 +17,7 @@ export const Navigation = () => {
         <Link href="/info" passHref>
           <NavItem>INFO</NavItem>
         </Link>
-        <Link href="/character" passHref>
+        <Link href="/characters" passHref>
           <NavItem>CHARACTER</NavItem>
         </Link>
         <Link href="/cast" passHref>

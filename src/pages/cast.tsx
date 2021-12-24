@@ -1,9 +1,11 @@
 import type { NextPage } from "next";
+import { CastContainer } from "../components/cast/CastContainer";
 
 const Cast: NextPage = () => {
+  const topic = "cast";
   return (
     <div>
-      <p>cast</p>
+      <CastContainer topic={topic} />
     </div>
   );
 };

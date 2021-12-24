@@ -12,4 +12,6 @@ export interface CharacterType {
   species: string;
   homePlanet: string;
   occupation: string;
+  sayings: [string];
+  id: number;
 }

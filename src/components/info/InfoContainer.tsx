@@ -16,14 +16,12 @@ export const InfoContainer = ({ topic }: ContainerProps) => {
   if (!data) return <Loading />;
 
   return (
-    <Cards>
+    <main>
       {data.map((infoData: InfoType) => {
         return (
           <Synopsis key={`info-data-${infoData.id}`} infoData={infoData} />
         );
       })}
-    </Cards>
+    </main>
   );
 };
-
-const Cards = styled.main``;

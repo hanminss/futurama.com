@@ -29,6 +29,9 @@ const SynopsisSection = styled.section`
 const SynopsisTitle = styled.h1`
   border-bottom: 1px solid #bdbdbd;
   margin: 0;
+  
+  @media (min-width: ${MEDIA_QUERY_END_POINT.MOBILE}) {
+    font-size: 32px;
 `;
 
 const YearsAired = styled.span`
