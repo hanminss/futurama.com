@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styled from "@emotion/styled";
 import logo from "../../images/logo.png";
+import { MEDIA_QUERY_END_POINT } from "../../constants";
 
 export const Navigation = () => {
   return (
@@ -37,24 +38,31 @@ export const Navigation = () => {
 };
 
 const HeaderContainer = styled.header`
+  // mobile
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem 10%;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.01em;
+  font-weight: 600;
 
-  @media (min-width: 640px) {
+  @media (min-width: ${MEDIA_QUERY_END_POINT.MOBILE}) {
     font-size: 1.5rem;
+    letter-spacing: normal;
+    font-weight: 700;
   }
 `;
 
 const NavContainer = styled.nav`
   display: flex;
+  justify-content: space-between;
   gap: 0.3rem;
   margin: 0.8rem 0 0 0;
 
-  @media (min-width: 640px) {
-    gap: 1rem;
+  @media (min-width: ${MEDIA_QUERY_END_POINT.MOBILE}) {
+    width: 100%;
+    padding: 0 1%;
   }
 `;
 

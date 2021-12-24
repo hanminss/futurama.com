@@ -1,22 +1,9 @@
 import type { NextPage } from "next";
-import { Error } from "../components/Error";
-import { Loading } from "../components/Loading";
-import { useData } from "../hooks/useData";
-import { InfoType } from "../types/InfoType";
+import { InfoContainer } from "../components/info/InfoContainer";
 
 const Info: NextPage = () => {
-  const { data, error } = useData("info");
-
-  if (error) return <Error />;
-  if (!data) return <Loading />;
-
-  return (
-    <div>
-      {data.map((data: InfoType) => {
-        return <p key={`info-id`}>{data.synopsis}</p>;
-      })}
-    </div>
-  );
+  const topic = "info";
+  return <InfoContainer topic={topic} />;
 };
 
 export default Info;
