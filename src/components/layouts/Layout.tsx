@@ -1,10 +1,11 @@
 import React from "react";
-import { Navigation, Footer } from ".";
+import { Navigation, Footer, HeadingTag } from ".";
 import styled from "@emotion/styled";
 
 export const Layout: React.FC = ({ children }) => {
   return (
     <div>
+      <HeadingTag />
       <Navigation />
       <ChildrenWrap>{children}</ChildrenWrap>
       <Footer />
