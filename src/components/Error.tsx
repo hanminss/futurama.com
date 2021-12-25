@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import Image from "next/image";
 import { MEDIA_QUERY_END_POINT } from "../constants";
 import errorImg from "../images/errorImg.png";
+
 export const Error = () => {
   return (
     <Main>
@@ -11,6 +11,7 @@ export const Error = () => {
   );
 };
 
+//styles
 const Main = styled.main`
   text-align: center;
 `;

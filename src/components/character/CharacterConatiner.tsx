@@ -2,10 +2,9 @@ import { Error } from "../Error";
 import { Loading } from "../Loading";
 import { useData } from "../../hooks/useData";
 import { CharacterType } from "../../types/CharacterType";
-import styled from "@emotion/styled";
 import { CharacterCard } from "./CharacterCard";
 import { MEDIA_QUERY_END_POINT } from "../../constants";
-
+import styled from "@emotion/styled";
 interface ContainerProps {
   topic: string;
 }
@@ -30,6 +29,7 @@ export const CharacterContainer = ({ topic }: ContainerProps) => {
   );
 };
 
+//styles
 const CharacterMain = styled.main`
   display: grid;
   grid-template-columns: 100%;

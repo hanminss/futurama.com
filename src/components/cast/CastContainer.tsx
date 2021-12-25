@@ -1,11 +1,10 @@
 import { Error } from "../Error";
 import { Loading } from "../Loading";
 import { useData } from "../../hooks/useData";
-import styled from "@emotion/styled";
 import { MEDIA_QUERY_END_POINT } from "../../constants";
 import { CastType } from "../../types/CastType";
 import { CastCard } from "./CastCard";
-
+import styled from "@emotion/styled";
 interface ContainerProps {
   topic: string;
 }
@@ -27,6 +26,7 @@ export const CastContainer = ({ topic }: ContainerProps) => {
   );
 };
 
+//styles
 const CastMain = styled.main`
   display: grid;
 

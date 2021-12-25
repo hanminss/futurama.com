@@ -2,7 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import styled from "@emotion/styled";
 import logo from "../../images/logo.png";
-import { MEDIA_QUERY_END_POINT } from "../../constants";
+import { MEDIA_QUERY_END_POINT, ROUTES } from "../../constants";
+
+interface ROUTE {
+  ID: number;
+  PATH: string;
+  LABEL: string;
+}
 
 export const Navigation = () => {
   return (
@@ -14,29 +20,23 @@ export const Navigation = () => {
       </Link>
       <NavContainer>
         {/* passHref를 사용하는 이유 :  Link는 사용자 지정 요소를 래핑하는 구성요소에는 사용하지 않아 href를 자식요소로 전달해야 한다.*/}
-        <Link href="/info" passHref>
-          <NavItem>INFO</NavItem>
-        </Link>
-        <Link href="/characters" passHref>
-          <NavItem>CHARACTER</NavItem>
-        </Link>
-        <Link href="/cast" passHref>
-          <NavItem>CAST</NavItem>
-        </Link>
-        <Link href="/episodes" passHref>
-          <NavItem>EPISODE</NavItem>
-        </Link>
-        <Link href="/questions" passHref>
-          <NavItem>QUESTION</NavItem>
-        </Link>
-        <Link href="/inventory" passHref>
-          <NavItem>INVENTORY</NavItem>
-        </Link>
+        {ROUTES.map((routeObject: ROUTE) => {
+          return (
+            <Link
+              key={`nav-${routeObject.ID}`}
+              href={routeObject.PATH}
+              passHref
+            >
+              <NavItem>{routeObject.LABEL}</NavItem>
+            </Link>
+          );
+        })}
       </NavContainer>
     </HeaderContainer>
   );
 };
 
+//styles
 const HeaderContainer = styled.header`
   display: flex;
   flex-direction: column;

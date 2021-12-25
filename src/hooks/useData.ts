@@ -6,7 +6,7 @@ export const useData = (path: string) => {
   return useSWR(`${API_END_POINT}${path}`, fetcher);
 };
 
-// use query
+// use query for dynamic routing
 interface QueryData {
   main: string;
   subs: string | string[] | undefined;

@@ -1,8 +1,9 @@
 import { InfoType } from "../../types/InfoType";
+import { MEDIA_QUERY_END_POINT } from "../../constants";
 import styled from "@emotion/styled";
 import Image from "next/image";
 import infoImg from "../../images/info-img.png";
-import { MEDIA_QUERY_END_POINT } from "../../constants";
+
 interface InfoTypeProps {
   infoData: InfoType;
 }
@@ -22,6 +23,7 @@ export const Synopsis = ({ infoData }: InfoTypeProps) => {
   );
 };
 
+//styles
 const SynopsisSection = styled.section`
   text-align: justify;
 `;

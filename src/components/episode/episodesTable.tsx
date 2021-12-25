@@ -1,11 +1,10 @@
-import styled from "@emotion/styled";
 import { MEDIA_QUERY_END_POINT } from "../../constants";
 import { useData } from "../../hooks/useData";
 import { EpisodeType } from "../../types/EpisodeType";
 import { Error } from "../Error";
 import { Loading } from "../Loading";
 import { EpisodeTd } from "./episodeTd";
-
+import styled from "@emotion/styled";
 interface ContainerProps {
   topic: string;
 }
@@ -37,6 +36,7 @@ export const EpisodesTable = ({ topic }: ContainerProps) => {
   );
 };
 
+//styles
 const Table = styled.table`
   width: 100%;
   table-layout: fixed;

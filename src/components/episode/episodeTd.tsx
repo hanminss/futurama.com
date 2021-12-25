@@ -1,6 +1,5 @@
-import styled from "@emotion/styled";
 import { EpisodeType } from "../../types/EpisodeType";
-
+import styled from "@emotion/styled";
 interface EpisodeTypeProps {
   episodeData: EpisodeType;
 }
@@ -23,6 +22,7 @@ export const EpisodeTd = ({ episodeData }: EpisodeTypeProps) => {
   );
 };
 
+//styles
 const TD = styled.td`
   border: 0.5px solid #bdbdbd;
 `;

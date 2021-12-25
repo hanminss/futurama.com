@@ -7,17 +7,17 @@ interface CharacterTypeProps {
 }
 
 export const CharacterCard = ({ characterData }: CharacterTypeProps) => {
-  const { id, images } = characterData;
-  const path = "/characters/" + id;
+  const { id, images, name } = characterData;
   return (
-    <Link href={path} passHref>
+    <Link href={"/characters/" + id} passHref>
       <Card>
-        <CharcterImg src={images.main} alt="" />
+        <CharcterImg src={images.main} alt={name.first} />
       </Card>
     </Link>
   );
 };
 
+//styles
 const Card = styled.article`
   text-align: center;
   padding-bottom: 2em;

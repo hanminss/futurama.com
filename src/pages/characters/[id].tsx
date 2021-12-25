@@ -23,6 +23,7 @@ const CharacterDetail: NextPage = () => {
     age,
   } = data;
 
+  // make fullname
   const fullName = (() => {
     if (name.middle == "") {
       return name.first + " " + name.last;
@@ -30,6 +31,7 @@ const CharacterDetail: NextPage = () => {
     return name.first + " " + name.middle + " " + name.last;
   })();
 
+  // random sayings for SpeechBubble
   const randomSayings = (() => {
     return sayings[Math.floor(Math.random() * (sayings.length - 1))];
   })();
@@ -61,6 +63,7 @@ const CharacterDetail: NextPage = () => {
 
 export default CharacterDetail;
 
+//styles
 const Main = styled.div`
   width: 100%;
   text-align: center;

@@ -1,9 +1,8 @@
-import styled from "@emotion/styled";
 import { keyframes } from "@emotion/react";
 import type { NextPage } from "next";
-
-import ShipImg from "../images/ship.png";
 import { MEDIA_QUERY_END_POINT, POSTER_URL } from "../constants";
+import styled from "@emotion/styled";
+import ShipImg from "../images/ship.png";
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +15,7 @@ const Home: NextPage = () => {
 
 export default Home;
 
+// styles
 const flying = keyframes`
 0% {
   transform: translate(0, 0) 

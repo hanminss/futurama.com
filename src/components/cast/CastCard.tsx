@@ -21,6 +21,7 @@ export const CastCard = ({ castData }: CastTypeProps) => {
   );
 };
 
+//styles
 const Card = styled.article`
   border: 1px solid #bdbdbd;
   border-radius: 20px;

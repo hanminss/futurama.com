@@ -12,6 +12,7 @@ export const Layout: React.FC = ({ children }) => {
   );
 };
 
+//styles
 const ChildrenWrap = styled.section`
   padding: 1rem 10%;
 `;

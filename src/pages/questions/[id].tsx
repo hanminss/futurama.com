@@ -64,6 +64,7 @@ const Quiz: NextPage = () => {
 
 export default Quiz;
 
+// styles
 const Title = styled.h3`
   margin: 0;
   text-align: justify;

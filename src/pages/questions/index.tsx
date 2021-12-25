@@ -15,6 +15,7 @@ const Questions: NextPage = () => {
 
 export default Questions;
 
+// styles
 const Main = styled.main`
   text-align: center;
 `;

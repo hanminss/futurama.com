@@ -9,6 +9,7 @@ export const Footer = () => {
   );
 };
 
+//styles
 const Foot = styled.footer`
   text-align: center;
   padding: 3rem;
