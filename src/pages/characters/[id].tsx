@@ -4,6 +4,7 @@ import { useQueryData } from "../../hooks/useData";
 import styled from "@emotion/styled";
 import { useRouter } from "next/router";
 import { NextPage } from "next";
+import { MEDIA_QUERY_END_POINT } from "../../constants";
 
 const CharacterDetail: NextPage = () => {
   const router = useRouter();
@@ -90,6 +91,12 @@ const SpeechBubble = styled.div`
     margin-left: -20px;
     margin-bottom: -20px;
   }
+  @media (min-width: ${MEDIA_QUERY_END_POINT.MOBILE}) {
+    width: 50%;
+  }
+  @media (min-width: ${MEDIA_QUERY_END_POINT.TABLET}) {
+    width: 30%;
+  }
 `;
 
 const Male = styled.span`
@@ -103,8 +110,8 @@ const Female = styled.span`
 `;
 
 const InfoWrap = styled.div`
+  display: inline-block;
   text-align: left;
-  margin: 0 10%;
   padding: 0 3%;
   border-left: 2px solid #bdbdbd;
 `;

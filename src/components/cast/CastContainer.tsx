@@ -29,6 +29,15 @@ export const CastContainer = ({ topic }: ContainerProps) => {
 
 const CastMain = styled.main`
   display: grid;
+
   gap: 2em;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  @media (min-width: ${MEDIA_QUERY_END_POINT.MOBILE}) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: ${MEDIA_QUERY_END_POINT.TABLET}) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (min-width: ${MEDIA_QUERY_END_POINT.DESKTOP}) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 `;

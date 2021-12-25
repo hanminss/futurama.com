@@ -55,7 +55,7 @@ const Ship = styled.img`
 `;
 
 const Poster = styled.img`
-  width: 100%;
+  width: 80%;
   border-radius: 10px;
   @media (min-width: ${MEDIA_QUERY_END_POINT.MOBILE}) {
     width: 60%;

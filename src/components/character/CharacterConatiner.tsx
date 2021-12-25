@@ -34,6 +34,10 @@ const CharacterMain = styled.main`
   display: grid;
   grid-template-columns: 100%;
   @media (min-width: ${MEDIA_QUERY_END_POINT.MOBILE}) {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 250px;
+  }
+  @media (min-width: ${MEDIA_QUERY_END_POINT.TABLET}) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: 200px;
   }

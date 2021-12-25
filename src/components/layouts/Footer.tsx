@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { MEDIA_QUERY_END_POINT } from "../../constants";
 
 export const Footer = () => {
   return (
@@ -10,10 +11,12 @@ export const Footer = () => {
 
 const Foot = styled.footer`
   text-align: center;
-  margin-top: 3rem;
   padding: 3rem;
+  margin-top: 3rem;
   border-top: 1px solid #bdbdbd;
   font-weight: 700;
+  left: 0;
+  bottom: 0;
 `;
 
 const HMSS = styled.a`
