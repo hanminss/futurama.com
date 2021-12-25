@@ -3,13 +3,12 @@ import { keyframes } from "@emotion/react";
 import type { NextPage } from "next";
 
 import ShipImg from "../images/ship.png";
+import { MEDIA_QUERY_END_POINT, POSTER_URL } from "../constants";
 
 const Home: NextPage = () => {
-  const url =
-    "https://w.namu.la/s/c30d9b068104918e6beb1cb3454b655659ac7fc28c959939f9d008f7d460821797714195fb71dfd3e3c378b14fc0a0c3f8fb89bfe48c77ca0f0d7d181245d1dd977b0da570f3f846cfd435b8972bff158e6ff18e7d03353e1912be7f893c3673943dca2c3a24ac3bbd545ffb8100b26d";
   return (
     <Container>
-      <Poster src={url} alt="poster" />
+      <Poster src={POSTER_URL} alt="poster" />
       <Ship src={ShipImg.src} alt="ship" />
     </Container>
   );
@@ -42,11 +41,29 @@ const Ship = styled.img`
   left: -40vw;
   top: 20%;
   z-index: -1;
-  width: 30vw;
   animation: ${flying} 5s ease infinite;
+  width: 30vw;
+  @media (min-width: ${MEDIA_QUERY_END_POINT.MOBILE}) {
+    width: 25vw;
+  }
+  @media (min-width: ${MEDIA_QUERY_END_POINT.TABLET}) {
+    width: 20vw;
+  }
+  @media (min-width: ${MEDIA_QUERY_END_POINT.DESKTOP}) {
+    width: 10vw;
+  }
 `;
 
 const Poster = styled.img`
+  width: 100%;
   border-radius: 10px;
-  height: 80vh;
+  @media (min-width: ${MEDIA_QUERY_END_POINT.MOBILE}) {
+    width: 60%;
+  }
+  @media (min-width: ${MEDIA_QUERY_END_POINT.TABLET}) {
+    width: 40%;
+  }
+  @media (min-width: ${MEDIA_QUERY_END_POINT.DESKTOP}) {
+    width: 30%;
+  }
 `;

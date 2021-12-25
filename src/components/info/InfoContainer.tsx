@@ -3,7 +3,6 @@ import { Loading } from "../Loading";
 import { useData } from "../../hooks/useData";
 import { InfoType } from "../../types/InfoType";
 import { Synopsis } from "./Synopsis";
-import styled from "@emotion/styled";
 
 interface ContainerProps {
   topic: string;

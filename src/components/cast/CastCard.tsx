@@ -1,6 +1,4 @@
-import { CharacterType } from "../../types/CharacterType";
 import styled from "@emotion/styled";
-import Link from "next/link";
 import { CastType } from "../../types/CastType";
 import { CAST_IMG } from "../../constants";
 
