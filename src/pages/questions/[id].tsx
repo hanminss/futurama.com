@@ -1,3 +1,4 @@
+import styled from "@emotion/styled";
 import { NextPage } from "next";
 import { useRouter } from "next/router";
 import { Error } from "../../components/Error";
@@ -29,26 +30,53 @@ const Quiz: NextPage = () => {
 
   return (
     <main>
-      <h3>
+      <Title>
         {id}. {question}
-      </h3>
-      {possibleAnswers.map((data: string) => {
-        if (data === correctAnswer) {
-          return (
-            <p key="O" onClick={correct}>
-              {++loopCounter}. {data}
-            </p>
-          );
-        } else {
-          return (
-            <p key="X" onClick={wrong}>
-              {++loopCounter}. {data}
-            </p>
-          );
-        }
-      })}
+      </Title>
+      <Qwrap>
+        {possibleAnswers.map((data: string) => {
+          if (data == correctAnswer) {
+            return (
+              <>
+                <Question key="O" onClick={correct}>
+                  {++loopCounter}. {data}
+                </Question>
+                <br />
+              </>
+            );
+          } else {
+            return (
+              <>
+                <Question key={`X-${loopCounter}`} onClick={wrong}>
+                  {++loopCounter}. {data}
+                </Question>
+                <br />
+              </>
+            );
+          }
+        })}
+      </Qwrap>
     </main>
   );
 };
 
 export default Quiz;
+
+const Title = styled.h3`
+  margin: 0;
+  text-align: justify;
+`;
+
+const Qwrap = styled.section`
+  margin: 0.5em 0 0 0.3em;
+  font-weight: 500;
+`;
+const Question = styled.span`
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+  &:hover {
+    transform: translate(1px, -1px);
+    color: blue;
+  }
+`;
