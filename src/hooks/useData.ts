@@ -9,9 +9,12 @@ export const useData = (path: string) => {
 // use query
 interface QueryData {
   main: string;
-  subs: string;
+  subs: string | string[] | undefined;
 }
 
 export const useQueryData = ({ main, subs }: QueryData) => {
+  if (subs == undefined) {
+    subs = "";
+  }
   return useSWR(`${API_END_POINT}${main}/${subs}`, fetcher);
 };

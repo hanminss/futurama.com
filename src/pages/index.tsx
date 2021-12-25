@@ -28,7 +28,7 @@ const flying = keyframes`
   transform: translate(150vw, 20vh) rotateY(180deg);
 }
 100%{
-  transform: translate(0, 0) rotateY(180deg);
+  transform: translate(0, 40vh) rotateY(180deg);
 }
 `;
 
