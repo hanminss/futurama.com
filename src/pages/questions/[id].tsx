@@ -8,7 +8,7 @@ import { useQueryData } from "../../hooks/useData";
 
 const Quiz: NextPage = () => {
   const router = useRouter();
-  const { id } = router.query;
+  const id: string = router.query.id as string;
   const { data, error } = useQueryData({ main: "questions", subs: id });
   let loopCounter = 0;
   const nextPage = `/questions/${parseInt(id) + 1}`;
