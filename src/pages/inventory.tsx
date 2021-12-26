@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import { Error } from "../components/Error";
 import { Loading } from "../components/Loading";
 import { useData } from "../hooks/useData";
-
+import { ITEM_IMG } from "../constants";
+import Image from "next/image";
 interface invType {
   title: string;
   category: string;
@@ -12,6 +13,11 @@ interface invType {
   price: string;
   stock: string;
   id: number;
+}
+
+interface invImgType {
+  id: number;
+  url: string;
 }
 
 const Inventory: NextPage = () => {
@@ -30,11 +36,15 @@ const Inventory: NextPage = () => {
 
   if (num == 0) return <button onClick={handleChangeId}>find</button>;
   const randomBox = data.find((datas: invType) => datas.id == num);
-  const { title, category, description, slogan, price, stock, id } = randomBox;
 
+  const randomBoxImg = ITEM_IMG.find((datas: invImgType) => datas.id == num);
+  if (!randomBoxImg) return <Loading />;
+  const { title, category, description, slogan, price, stock, id } = randomBox;
+  const url = randomBoxImg.url;
   return (
     <main>
       <button onClick={handleChangeId}>find</button>
+      <img src={url} alt="ats" />
       <p>{title}</p>
       <p>{category}</p>
       <p>{description}</p>

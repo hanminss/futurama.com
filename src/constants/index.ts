@@ -95,3 +95,131 @@ export const CAST_IMG = [
     url: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJzMQ6KoUI_YXLTGuatkcT48yBjJEZocZaOzdGZeWTy8cc6dr0",
   },
 ];
+
+// more data for inventory
+export const ITEM_IMG = [
+  {
+    id: 1,
+    url: "https://theinfosphere.org/images/2/23/Def_Con_owl_traps.jpg",
+  },
+  {
+    id: 2,
+    url: "https://theinfosphere.org/images/thumb/f/f6/Human_Trap.png/300px-Human_Trap.png",
+  },
+  {
+    id: 3,
+    url: "https://theinfosphere.org/images/thumb/4/43/Arachno_Spores.jpg/300px-Arachno_Spores.jpg",
+  },
+  {
+    id: 4,
+    url: "https://theinfosphere.org/images/thumb/7/78/Molten_Boron.jpg/300px-Molten_Boron.jpg",
+  },
+  {
+    id: 5,
+    url: "https://theinfosphere.org/images/thumb/4/4e/Bachelor_chow_game.png/300px-Bachelor_chow_game.png",
+  },
+  {
+    id: 6,
+    url: "https://theinfosphere.org/images/thumb/5/54/Slurm_Splat_Logo.png/300px-Slurm_Splat_Logo.png",
+  },
+  {
+    id: 7,
+    url: "https://theinfosphere.org/images/thumb/a/a1/Big_Applet.jpg/300px-Big_Applet.jpg",
+  },
+  {
+    id: 8,
+    url: "https://theinfosphere.org/images/thumb/e/ed/IObey.jpg/300px-IObey.jpg",
+  },
+  {
+    id: 9,
+    url: "https://theinfosphere.org/images/thumb/0/09/Angry_Norwegian_Anchovies.jpg/300px-Angry_Norwegian_Anchovies.jpg",
+  },
+  {
+    id: 10,
+    url: "https://theinfosphere.org/images/thumb/b/b9/Farnsworth_Novelty_Disintegrator_Ray.jpg/300px-Farnsworth_Novelty_Disintegrator_Ray.jpg",
+  },
+  {
+    id: 11,
+    url: "https://theinfosphere.org/images/b/ba/CaptainHandbook.png",
+  },
+  {
+    id: 12,
+    url: "https://theinfosphere.org/images/thumb/0/0d/Benderbrau.jpg/300px-Benderbrau.jpg",
+  },
+  {
+    id: 13,
+    url: "https://theinfosphere.org/images/thumb/5/56/Ticklemebender.jpg/300px-Ticklemebender.jpg",
+  },
+  {
+    id: 14,
+    url: "https://theinfosphere.org/images/8/80/Delivery-Boy-Man.jpg",
+  },
+  {
+    id: 15,
+    url: "https://theinfosphere.org/images/thumb/7/7a/Kibbles_n_Snouts.jpg/300px-Kibbles_n_Snouts.jpg",
+  },
+  {
+    id: 16,
+    url: "https://theinfosphere.org/images/thumb/9/9f/Lovey_Bears.jpg/300px-Lovey_Bears.jpg",
+  },
+  {
+    id: 17,
+    url: "https://theinfosphere.org/images/c/cd/Ewj.png",
+  },
+  {
+    id: 18,
+    url: "https://theinfosphere.org/images/thumb/b/b0/Good_News.png/300px-Good_News.png",
+  },
+  {
+    id: 19,
+    url: "https://theinfosphere.org/images/thumb/0/07/Glagnar%27s_Human_Rinds.jpg/300px-Glagnar%27s_Human_Rinds.jpg",
+  },
+  {
+    id: 20,
+    url: "https://theinfosphere.org/images/thumb/c/c5/Bamboo_Boogie_Boots.jpg/300px-Bamboo_Boogie_Boots.jpg",
+  },
+  {
+    id: 21,
+    url: "https://theinfosphere.org/images/thumb/b/b0/Three_More_Great_Recipes.png/300px-Three_More_Great_Recipes.png",
+  },
+  {
+    id: 22,
+    url: "https://theinfosphere.org/images/thumb/c/cf/Band-Ape.png/300px-Band-Ape.png",
+  },
+  {
+    id: 23,
+    url: "https://theinfosphere.org/images/0/00/Admiral_Crunch.jpg",
+  },
+  {
+    id: 24,
+    url: "https://theinfosphere.org/images/thumb/b/b8/Becktionary.png/300px-Becktionary.png",
+  },
+  {
+    id: 25,
+    url: "https://theinfosphere.org/images/thumb/9/90/Cavitar_Toothpaste.png/300px-Cavitar_Toothpaste.png",
+  },
+  {
+    id: 26,
+    url: "https://theinfosphere.org/images/thumb/1/1a/Lightspeed_briefs_game.png/300px-Lightspeed_briefs_game.png",
+  },
+  {
+    id: 27,
+    url: "https://theinfosphere.org/images/thumb/c/cc/FlimFlam2.jpg/300px-FlimFlam2.jpg",
+  },
+  {
+    id: 28,
+    url: "https://theinfosphere.org/images/thumb/1/1c/Robo-fresh.jpg/300px-Robo-fresh.jpg",
+  },
+  {
+    id: 29,
+    url: "https://theinfosphere.org/images/thumb/b/b0/TanningButter.png/300px-TanningButter.png",
+  },
+  {
+    id: 30,
+    url: "https://theinfosphere.org/images/thumb/4/41/Thompson%27s_Teeth.jpg/300px-Thompson%27s_Teeth.jpg",
+  },
+  {
+    id: 31,
+    url: "https://theinfosphere.org/images/thumb/c/cc/Code_of_Conduct_for_Cannibalism.png/300px-Code_of_Conduct_for_Cannibalism.png",
+  },
+];
