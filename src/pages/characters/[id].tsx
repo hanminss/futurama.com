@@ -50,12 +50,20 @@ const CharacterDetail: NextPage = () => {
         <p>
           <Bold>Species</Bold>: {species}
         </p>
-        <p>
-          <Bold>Home</Bold>: {homePlanet}
-        </p>
-        <p>
-          <Bold>Occupation</Bold>: {occupation}
-        </p>
+        {homePlanet ? (
+          <p>
+            <Bold>Home</Bold>: {homePlanet}
+          </p>
+        ) : (
+          ""
+        )}
+        {occupation ? (
+          <p>
+            <Bold>Occupation</Bold>: {occupation}
+          </p>
+        ) : (
+          ""
+        )}
       </InfoWrap>
     </Main>
   );
