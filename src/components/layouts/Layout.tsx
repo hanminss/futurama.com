@@ -6,8 +6,10 @@ export const Layout: React.FC = ({ children }) => {
   return (
     <div>
       <HeadingTag />
-      <Navigation />
-      <ChildrenWrap>{children}</ChildrenWrap>
+      <MinWrap>
+        <Navigation />
+        <ChildrenWrap>{children}</ChildrenWrap>
+      </MinWrap>
       <Footer />
     </div>
   );
@@ -16,4 +18,8 @@ export const Layout: React.FC = ({ children }) => {
 //styles
 const ChildrenWrap = styled.section`
   padding: 1rem 10%;
+`;
+
+const MinWrap = styled.section`
+  min-height: calc(100vh - 115px);
 `;

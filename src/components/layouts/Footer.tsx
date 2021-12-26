@@ -12,7 +12,6 @@ export const Footer = () => {
 const Foot = styled.footer`
   text-align: center;
   padding: 3rem;
-  margin-top: 3rem;
   border-top: 1px solid #bdbdbd;
   font-weight: 700;
   left: 0;
