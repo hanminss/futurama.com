@@ -5,7 +5,7 @@ import Link from "next/link";
 const Questions: NextPage = () => {
   return (
     <Main>
-      <h1>Let&apos;s solve the quiz!</h1>
+      <h1>Let&apos;s solve quizzes!</h1>
       <Link href="/questions/1" passHref>
         <Btn>Start !</Btn>
       </Link>
