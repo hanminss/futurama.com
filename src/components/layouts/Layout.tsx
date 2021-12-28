@@ -5,7 +5,7 @@ import styled from "@emotion/styled";
 export const Layout: React.FC = ({ children }) => {
   return (
     <div>
-      <HeadingTag />
+      {/* <HeadingTag /> */}
       <MinWrap>
         <Navigation />
         <ChildrenWrap>{children}</ChildrenWrap>
