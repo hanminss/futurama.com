@@ -5,7 +5,7 @@ export const HeadingTag = () => {
   return (
     <Head>
       <title>FUTURAMA ARCHIVE</title>
-      <meta charSet="utf-8" />
+      {/* <meta charSet="utf-8" /> */}
       <meta name="keyword" content="futurama, Jhon, sample apis" />
       <meta name="description" content="Jhon's study 3rd assignment" />
       <meta name="author" content="hanminsss" />
