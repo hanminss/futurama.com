@@ -45,7 +45,7 @@ export const MEDIA_QUERY_END_POINT = {
 
 // poster url : index.tsx
 export const POSTER_URL =
-  "https://w.namu.la/s/c30d9b068104918e6beb1cb3454b655659ac7fc28c959939f9d008f7d460821797714195fb71dfd3e3c378b14fc0a0c3f8fb89bfe48c77ca0f0d7d181245d1dd977b0da570f3f846cfd435b8972bff158e6ff18e7d03353e1912be7f893c3673943dca2c3a24ac3bbd545ffb8100b26d";
+  "https://m.media-amazon.com/images/I/71i5W79AucL._AC_SL1000_.jpg";
 
 // more data for cast
 export const CAST_IMG = [
